@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    font-family: Gotham Rounded, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: forestgreen;
+}
+
+#todo-wrapper {
+    background-color: whitesmoke;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#todo-wrapper h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#todo-wrapper p {
+    font-style: italic;
+    color: dimgray;
+}
+
+#todo-wrapper ol {
+
+}
+
+#todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    user-select: none;
+    -webkit-transition: all 0.75s ease-out;
+}
+
+#todo-wrapper ol li:nth-child(even) {
+    background-color: lightgreen;
+}
+
+#todo-wrapper .completed {
+    text-decoration: line-through;
+    color: dimgrey;
+}
+
+#todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+#todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#todo-entry-box {
+    padding: 6px 8px;
+    border-radius: 15px;
+}
+
+#todo-wrapper form {
+    display: inline-block;
+}
+
+#todo-wrapper #todo-button-clear-completed, #todo-button-empty, #todo-button-save, #todo-button-add{
+    background-color: darkblue;
+}
+
+#control-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1400px) {
+    #todo-wrapper {
+        width: 50%;
+    }
+
+    #todo-wrapper input {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    #todo-wrapper {
+        width: 75%;
+    }
+
+    #todo-wrapper input {
+        width: 400px;
+    }
+}
